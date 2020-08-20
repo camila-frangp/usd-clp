@@ -60,7 +60,7 @@ const Content: React.FC<IContentProps> = (props: IContentProps) => {
           Elige un mes y compara con el más reciente
         </h2>
         <SelectComponent
-          className={cx(css.header_item, 'col_3')}
+          className={cx(css.header_item, 'col_3', 'col_sm_12')}
           placeholder="Mes"
           value={valueMonth}
           options={month}
@@ -68,7 +68,7 @@ const Content: React.FC<IContentProps> = (props: IContentProps) => {
           isClearable={true}
         />
         <SelectComponent
-          className={cx(css.header_item, 'col_3')}
+          className={cx(css.header_item, 'col_3', 'col_sm_12')}
           placeholder="Año"
           value={valueYearFirst}
           options={years}
@@ -77,7 +77,7 @@ const Content: React.FC<IContentProps> = (props: IContentProps) => {
         />
         <Button
           children="Comparar"
-          className={cx(css.header_item, 'col_3')}
+          className={cx(css.header_item, 'col_3', 'col_sm_12')}
           onClick={() => {
             getData(valueYearFirst.value, valueMonth.value);
             getDataCompare(valueYearCompare, valueMonth.value);
@@ -87,8 +87,14 @@ const Content: React.FC<IContentProps> = (props: IContentProps) => {
 
       {dolarMonth && dolarCompareMonth && (
         <section className={cx(css.cntTableCompare, 'container-row')}>
-          <Table dataTable={dolarMonth} className={cx(css.cntTableCompare_item, 'col_4')} />
-          <Table dataTable={dolarCompareMonth} className={cx(css.cntTableCompare_item, 'col_4')} />
+          <Table
+            dataTable={dolarMonth}
+            className={cx(css.cntTableCompare_item, 'col_4', 'col_sm_12')}
+          />
+          <Table
+            dataTable={dolarCompareMonth}
+            className={cx(css.cntTableCompare_item, 'col_4', 'col_sm_12')}
+          />
         </section>
       )}
     </section>

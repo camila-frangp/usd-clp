@@ -22,10 +22,40 @@
   }
   .cntTableCompare {
     flex-wrap: nowrap;
+    margin: 1rem 0 0;
     &_item {
       margin: 0 0 0 1rem;
       &:first-child {
         margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .content {
+    border-radius: 1rem;
+    min-height: calc(100vh - 150px - 5rem);
+    .header {
+      height: fit-content;
+      &_title {
+        @include textType(1.25rem, black-tax, bold);
+        padding: 0 0 0.75rem;
+      }
+      &_item {
+        margin: 0 0 1rem;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    .cntTableCompare {
+      flex-wrap: wrap;
+      &_item {
+        margin: 0.75rem 0 0;
+        &:first-child {
+          margin: 0;
+        }
       }
     }
   }
