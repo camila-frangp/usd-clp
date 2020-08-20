@@ -35,7 +35,7 @@
 @media screen and (max-width: $sm) {
   .content {
     border-radius: 1rem;
-    min-height: calc(100vh - 150px - 5rem);
+    min-height: calc(100vh - 5rem);
     .header {
       height: fit-content;
       &_title {
