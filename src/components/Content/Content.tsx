@@ -82,6 +82,7 @@ const Content: React.FC<IContentProps> = (props: IContentProps) => {
             getData(valueYearFirst.value, valueMonth.value);
             getDataCompare(valueYearCompare, valueMonth.value);
           }}
+          disabled={!valueYearFirst.value || !valueMonth.value}
         />
       </header>
 

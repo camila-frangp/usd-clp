@@ -15,7 +15,7 @@
     background: map-get($colors, yellow-black-tax);
   }
   &:disabled {
-    color: map-get($colors, gray-black-tax);
-    background: map-get($colors, gray-ligth-tax);
+    color: map-get($colors, gray-light-tax);
+    background: map-get($colors, gray-black-tax);
   }
 }
