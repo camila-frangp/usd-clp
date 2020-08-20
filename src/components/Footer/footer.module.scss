@@ -1,0 +1,18 @@
+/** @format */
+
+@import './../../assets/scss/_mixin.scss';
+@import './../../assets/scss/_variables.scss';
+
+.footer {
+  background: map-get($colors, black-tax);
+  padding: 1rem;
+  text-align: center;
+  height: 80px;
+  &_text {
+    @include textType(0.75rem, white-tax);
+    padding: 0 0 0.75rem;
+    .textBold {
+      @include textType(0.75rem, white-tax, bold);
+    }
+  }
+}

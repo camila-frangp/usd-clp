@@ -1,0 +1,12 @@
+/** @format */
+
+@import './assets/scss/_mixin.scss';
+@import './assets/scss/_variables.scss';
+@import './assets/scss/_grid.scss';
+@import './assets/scss/_normalize.scss';
+
+.cnt_principal {
+  min-height: calc(100vh - 5rem);
+  background: map-get($colors, black-tax);
+  padding: 1rem;
+}

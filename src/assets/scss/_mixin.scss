@@ -1,0 +1,18 @@
+/** @format */
+@import './_variables.scss';
+
+@mixin textType($size, $color, $weight: regular) {
+  font-size: $size;
+  color: map-get($colors, $color);
+  font-weight: map-get($fonts, $weight);
+}
+
+@mixin box($bg, $border, $radius: none) {
+  background: map-get($colors, $bg);
+  @if ($border != none) {
+    border: 1px solid map-get($colors, $border);
+  }
+  @if ($radius != none) {
+    border-radius: $radius;
+  }
+}

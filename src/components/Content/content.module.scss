@@ -1,0 +1,32 @@
+/** @format */
+
+@import './../../assets/scss/_mixin.scss';
+@import './../../assets/scss/_variables.scss';
+
+.content {
+  background: map-get($colors, gray-light-tax);
+  border-radius: 0 1rem 1rem 0;
+  padding: 1rem;
+  .header {
+    height: fit-content;
+    &_title {
+      @include textType(1.25rem, black-tax, bold);
+      padding: 0 0 0.75rem;
+    }
+    &_item {
+      margin: 0 1rem 0 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  .cntTableCompare {
+    flex-wrap: nowrap;
+    &_item {
+      margin: 0 0 0 1rem;
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+}

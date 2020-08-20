@@ -1,0 +1,35 @@
+/** @format */
+
+@import './../../assets/scss/_mixin.scss';
+@import './../../assets/scss/_variables.scss';
+
+.cntTable {
+  @include box(white-tax, gray-black-tax, 0.5rem);
+  .listHeader {
+    background: map-get($colors, yellow-tax);
+    list-style: none;
+    border-radius: 0.5rem 0.5rem 0 0;
+    &_item {
+      @include textType(1rem, black-tax, bold);
+      padding: 0.25rem;
+      &:first-child {
+        border-right: 1px solid map-get($colors, gray-black-tax);
+      }
+    }
+  }
+  .listInfo {
+    list-style: none;
+    border-radius: 0.5rem 0.5rem 0 0;
+    border-bottom: 1px solid map-get($colors, gray-black-tax);
+    &:last-child {
+      border-bottom: none;
+    }
+    &_item {
+      @include textType(0.75rem, black-tax);
+      padding: 0.25rem;
+      &:first-child {
+        border-right: 1px solid map-get($colors, gray-black-tax);
+      }
+    }
+  }
+}

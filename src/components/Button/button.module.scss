@@ -1,0 +1,21 @@
+/** @format */
+
+@import './../../assets/scss/variables';
+@import './../../assets/scss/mixin';
+
+.button {
+  @include textType(0.875rem, black-tax, bold);
+  @include box(yellow-tax, none, 0.3125rem);
+  padding: 0.625rem 0.75rem;
+  cursor: pointer;
+  outline: none;
+  &:hover,
+  &:active {
+    color: map-get($colors, black-tax);
+    background: map-get($colors, yellow-black-tax);
+  }
+  &:disabled {
+    color: map-get($colors, gray-black-tax);
+    background: map-get($colors, gray-ligth-tax);
+  }
+}

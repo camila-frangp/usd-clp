@@ -1,0 +1,23 @@
+/** @format */
+$fonts: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 700,
+);
+
+$colors: (
+  white-tax: #ffffff,
+  yellow-tax: #f5db6e,
+  yellow-black-tax: #f5cc0e,
+  black-tax: #232323,
+  gray-light-tax: #f6f7f7,
+  gray-black-tax: #b7b6b6,
+);
+
+//Breakpoint
+$lg: 1199.98px;
+$md: 991.98px;
+$sm: 767.98px;
+$xs: 575.98px;
+$us: 415.98px;

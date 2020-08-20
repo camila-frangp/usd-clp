@@ -1,0 +1,29 @@
+/** @format */
+
+@import '../../assets/scss/mixin';
+@import '../../assets/scss/variables';
+
+.cntInput {
+  @include box(white-tax, gray-light-tax, 0.3125rem);
+  @include textType(0.875rem, gray-black-tax);
+  width: 100%;
+  min-height: 38px;
+  padding: 0.7rem 0.75rem;
+  flex-grow: 1;
+  outline: none;
+
+  &::placeholder {
+    color: map-get($colors, gray-black-tax);
+  }
+  &:focus {
+    border: 1px solid map-get($colors, yellow-tax);
+  }
+  &:hover {
+    border: 1px solid map-get($colors, gray-black-tax);
+  }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}

@@ -1,0 +1,29 @@
+/** @format */
+
+@import './../../assets/scss/_mixin.scss';
+@import './../../assets/scss/_variables.scss';
+
+.cntAside {
+  padding: 1rem;
+  text-align: center;
+  height: fit-content;
+  &_title {
+    @include textType(1rem, white-tax, bold);
+    padding: 0 0 2rem;
+  }
+  &_text {
+    @include textType(0.875rem, white-tax);
+    padding: 0 0 0.75rem;
+  }
+  .cntResult {
+    @include box(yellow-tax, none, 0.5rem);
+    margin: 0.75rem 0 0;
+    padding: 0.5rem;
+    &_text {
+      @include textType(0.875rem, black-tax);
+      .cntResult_text__bold {
+        @include textType(1rem, black-tax, bold);
+      }
+    }
+  }
+}
